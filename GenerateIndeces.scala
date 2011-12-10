@@ -1,7 +1,7 @@
 import java.io._
 import scala.xml._
 
-object GenerateIndeces extends Application {
+object GenerateIndeces extends App {
   val root = new File("maven")
   recurse(root)
 
