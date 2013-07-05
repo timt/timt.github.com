@@ -29,7 +29,7 @@ object GenerateIndeces extends App {
     </html>
   }
 
-  def path(dir: File): String = if (dir == root) "maven" else path(dir.getParentFile) + "/" + dir.getName
+  def path(dir: File): String = if (dir == root) "repo" else path(dir.getParentFile) + "/" + dir.getName
 
   def rootLink(dir: File): String = {
     if (dir == root) ".." else rootLink(dir.getParentFile) + "/.."
@@ -42,4 +42,3 @@ object GenerateIndeces extends App {
     out.close
   }
 }
-
