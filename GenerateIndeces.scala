@@ -1,7 +1,6 @@
 import java.io._
 import scala.xml._
 
-object GenerateIndeces extends App {
   val root = new File("repo")
   recurse(root)
 
@@ -41,4 +40,3 @@ object GenerateIndeces extends App {
     out.write(new PrettyPrinter(120,2).format(n))
     out.close
   }
-}
